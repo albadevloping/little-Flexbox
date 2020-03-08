@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+    font-size: 1.3rem;
+}
+
+/*Diseño del navbar*/
+
+.alba {
+    color: #fc772a;   
+}
+
+.text-primary {
+    color: #fc772a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky; /*se tiene que declarar a la vez un top o un right*/
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+/*Menú de navegación*/
+ul {
+    display: flex;
+    align-items: center; /*Los centra verticalmente y pone el logo y el menú a la misma altura verticalmente*/
+    list-style: none;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0.75rem;
+}
+
+ul li a:hover {
+    background: #fc772a;
+    border-radius: 5px;
+}
+
+/*Header*/
+.header {
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /*Tienes que aplicar el height para poder añadir un aling-items*/
+    height: 100%; /*100% del contenedor padre que sería el header*/
+    align-items: center;
+    padding: 0 2rem;
+    /*position: absolute;
+    /*top: 63.7px; /*porque esa es la medida del menú, para que empieze a partir de los 65px*/
+    /*left: 0;*/
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/*h1 del header*/
+
+.header-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+/*Párrafo del header*/
+.header-text {
+    font-size: 1.6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+
+}
+
+/*Botón del header*/
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #fc772a;
+    font-size: 1.5rem;
+    padding: 0.4rem 1.3rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e9ae8b;
+}
+
+/*Section What we do-encabezado*/
+
+.heading-que {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+
+.span-que{
+    color: #fc772a;
+}
+
+/*Section What we do-contenido*/
+
+.container-que {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.items-que {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.item i {
+    background: #fc772a;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/*Sección sobre nosotros*/
+
+.nosotros-span {
+    color: #fc772a; 
+}
+
+.nosotros {
+    display: flex;
+}
+
+.nosotros div {
+    flex: 1;  /*Esto hace que los dos div cojan tamaños proporcionales y divide el div en dos de manera proporcional en la pantalla, crea dos div con el mismo tamaño uno al lado de otro de forma horizontal*/
+}
+
+.nosotros-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+    
+}
+
+.nosotros-texto {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.nosotros-texto h2 {
+    font-size: 2.5rem;
+}
+
+.nosotros-nuestro-equipo {
+    font-size: 1.5rem;
+}
+
+.nosotros-equipo {
+    border-bottom: #444 dotted 1px;
+}
+
+/*Sección clientes*/
+
+.clientes-heading {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 1.9rem 0 2.7rem 0;
+    
+
+}
+
+.clientes-heading-span {
+    color: #fc772a;
+}
+
+.container-clientes {
+    display: flex;
+    margin-bottom: 3.5rem;
+}
+
+.clientes-items img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+/*Formulario de contacto*/
+
+.contact-form {
+    background-color: #fc772a;
+    color: #fff;
+    padding: 1rem;
+    
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-form, .map {
+    flex: 1;
+}
+
+/**Títulos del Contacto*/
+.contact-form h2 {
+    font-size: 2.5rem;    
+}
+.contact-form p {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+/*Propiedades del formulario*/
+
+.form {
+
+}
+
+.form-group {
+    margin: 0.80rem;
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.contact-form textarea, 
+.contact-form input {
+    width: 100%;
+    padding: 0.50rem;
+    margin: 0.20rem;
+}
+
+/*Botón fotmulario de contacto*/
+.formboton {
+    background: #444;
+    font-size: 1.3rem;
+    border: none;
+}
+
+/*Footer*/
+
+.main-footer p {
+    background: #444;
+    height: 3rem;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: #fff;
+    
+}
+
+/*MEDIA QUERYS*/
+
+@media(max-width: 500px) {
+    /*Menú*/
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar h1 {
+        margin-top: 0.65rem;
+        margin-bottom: 0.65rem;
+
+    }
+    
+    /*Sección header*/
+    .header-heading {
+        font-size: 24px;
+    }
+
+    .header-text {
+        font-size: 20px;
+        margin: 0;
+        
+    }
+
+    .btn {
+        padding: 10;
+        font-size: 17px;
+        margin-top: 18px;
+    }
+
+    /*Sección sobre nosotros*/
+    .items-que {
+        display: block;
+    }
+
+    .nosotros {
+        display: block; /*pero con esto desaparece la foto de los trabajadores, deberíamos de ponerle un height al div de la foto para que apareciera debajo*/
+    }
+
+    .nosotros-img {
+        display: none; /*Para que desaparezca la foto de los trabajadores del todo*/
+    }
+
+    /*Sección de contacto y mapa*/
+    .contact {
+        display: block; /*pero desaparece el mapa*/
+    }
+
+    .contact .map {
+        height: 445px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+} 
