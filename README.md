@@ -1,5 +1,5 @@
 # little-Flexbox
-just a beautiful thing to do during my free time
+just a beautiful thing to do during my free time.
 
 ## finish result  :eyes:
 
